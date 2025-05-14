@@ -1,16 +1,17 @@
-# Motywator-bot
+# 💬 Motivator Bot
 
-To prosty bot motywacyjny napisany w Pythonie przez **bbonbeq**.
+A simple motivational bot written in Python by **bbonbeq**.
 
-## Jak działa?
+## 🧠 How does it work?
 
-Co 10 sekund wyświetla losową wiadomość motywacyjną w terminalu.
+Every 10 seconds, it displays a random motivational message in the terminal — now with colorful output using the `colorama` library.
 
-## Jak uruchomić?
+## ▶️ How to run it?
 
-1. Zainstaluj Pythona (jeśli jeszcze nie masz).
-2. Skopiuj plik `bot.py`.
-3. W terminalu wpisz:
+1. Make sure you have Python installed.
+2. Copy or download the `bot.py` file.
+3. Open your terminal in the same directory and run:
 
 ```bash
+pip install colorama
 python bot.py

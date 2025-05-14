@@ -1,9 +1,6 @@
 import random
 import time
 import sys
-from colorama import Fore, Style, init
-
-init(autoreset=True)
 
 motivations = [
     "Don't give up, bbonbeq!",
@@ -22,11 +19,10 @@ emojis = ["💪", "🚀", "🔥", "🌟", "🎯", "📈", "🧠", "⚡", "✅"]
 def show_message(count):
     message = random.choice(motivations)
     emoji = random.choice(emojis)
-    color = random.choice([Fore.RED, Fore.GREEN, Fore.CYAN, Fore.MAGENTA, Fore.YELLOW])
-    print(f"{color}[{count}] {message} {emoji}{Style.RESET_ALL}")
+    print(f"[{count}] {message} {emoji}")
 
 def motivation_bot():
-    print(Fore.BLUE + "Motivation bot started! Press Ctrl+C to stop.\n" + Style.RESET_ALL)
+    print("Motivation bot started! Press Ctrl+C to stop.\n")
     count = 1
     try:
         while True:
@@ -34,7 +30,7 @@ def motivation_bot():
             time.sleep(10)
             count += 1
     except KeyboardInterrupt:
-        print(Fore.RED + "\nBot stopped. Keep going, you're doing great! 💖" + Style.RESET_ALL)
+        print("\nBot stopped. Keep going, you're doing great! 💖")
         sys.exit()
 
 if __name__ == "__main__":
